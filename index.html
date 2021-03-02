@@ -12,6 +12,6 @@
     document.write(
         `
         <iframe src="https://skyscrapetest2.bubbleapps.io/" width="
-        `+(window.innerWidth)+`"height="`+window.innerHeight+`" frameborder="0" marginheight="0" marginwidth="0" scroll=“yes” and style=“overflow:scroll”>Loading…</iframe>`
+        `+(window.innerWidth * window.devicePixelRatio/1.25)+`"height="`+(window.innerHeight*window.devicePixelRatio)+`" frameborder="0" marginheight="0" marginwidth="0" scroll=“yes” and style=“overflow:scroll”>Loading…</iframe>`
     )
 </script>
