@@ -22,23 +22,30 @@
                 <p class="name" style="text-align: center;">
                   Felipe Nuti
                 </p>
+
                 <p>
-                    I am a 4th year Mathematics and Computer Science undergraduate at the <a href="https://www.ox.ac.uk/">University of Oxford</a>, doing research at the <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group</a> under <a href="https://www.robots.ox.ac.uk/~frtim/">Tim Franzmeyer</a> and <a href="https://www.robots.ox.ac.uk/~joao/">João Henriques</a>. 
+                  I am a Quantitative Researcher at <a href="https://www.citadelsecurities.com/">Citadel Securities</a>, working on modeling for Systematic Fixed Income, Commodities and Currencies (FICC) strategies.
                 </p>
                 <p>
-                  My main research interest is generative modeling; in particular diffusion models and their properties relating to steerability and interpretability. Recently, we proposed the first method for <a href="https://www.robots.ox.ac.uk/~vgg/research/reward-diffusion/">extracting reward functions from diffusion models</a>.
+                  Before that, I did my undergraduate degree in Mathematics and Computer Science at the <a href="https://www.ox.ac.uk/">University of Oxford</a>, where I studied stochastic analysis and maching learning, and did research at the <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group</a> under <a href="https://www.robots.ox.ac.uk/~frtim/">Tim Franzmeyer</a> and <a href="https://www.robots.ox.ac.uk/~joao/">João Henriques</a>.
                 </p>
                 <p>
-                  I am also interested in learning more about theoretical perspectives on foundation models.
+                  During my degree, I interned at <a href="https://www.citadelsecurities.com/">Citadel Securities</a> as a Quantitative Researcher in Systematic FX. Before that, I did an internship on Causal Inference and Machine Learning at <a href="https://www.quantco.com/">QuantCo Zürich</a>.
+                </p>
+
+                <h3>Academic research</h3>
+                <p>
+                  My academic research has focused on quantifying differences between generative models, especially in safety settings.
                 </p>
                 <p>
-                  This past summer, I interned at <a href="https://www.citadelsecurities.com/">Citadel Securities</a> as a Quantitative Researched in Systematic FX. Before that, I did an internship on Causal Inference and Machine Learning at <a href="https://www.quantco.com/">QuantCo Zürich</a>.
+                  We recently proposed a <a href="https://arxiv.org/abs/2506.23423">method for measuring the contribution of fine-tuning to individual LLM responses</a>, and quantitatively showed that strong jailbreak attacks attenuate this contribution.
                 </p>
-                <!-- <p>
-                  At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
-                </p> -->
+                <p>
+                  In 2023, we also proposed the <a href="https://arxiv.org/abs/2306.01804">first method for extracting reward functions from two diffusion models</a>, which was able to, for example, extract a harmful content classifier by comparing an image generation diffusion model with safety guardrails to one without.
+                </p>
+
                 <p style="text-align:center">
-                  <a href="mailto:felipenuti1182@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:<firstname><lastname>1182@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=BLMdYoEAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/felipe-nuti/">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://twitter.com/NutiFelipe">Twitter</a> &nbsp;/&nbsp;
@@ -53,17 +60,46 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2>Publications</h2>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/tuco_plot.png' width="160" style="border: 2px solid #d3d3d3;">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://openreview.net/forum?id=yxoxw0IUTR">
+          <span class="papertitle">TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs</span>
+        </a>
+        <br>
+        <b>Felipe Nuti</b>,
+        Tim Franzmeyer,
+        João F. Henriques
+        <br>
+        <em>ICML</em>, 2025
+        <br>
+        <a href="https://openreview.net/forum?id=yxoxw0IUTR">OpenReview</a>
+        /
+        <a href="https://arxiv.org/abs/2506.23423">arXiv</a>
+        /
+        <a href="https://github.com/FelipeNuti/tuning-contribution">code</a>
+        <p></p>
+        <p>
+        A method for quantifying how much fine-tuning contributes to an LLM's response using intermediate hidden states. 
+        We use it to quantitatively demonstrate that jailbreak attacks attenuate the effect of fine-tuning, and the attenuation is stronger the more powerful the attack.
+        </p>
+      </td>
+    </tr>
+            
     <tr onmouseout="rrf_stop()" onmouseover="rrf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <img src='images/rrf_maze.png' width="160">
+          <img src='images/rrf_maze.png' width="160" style="border: 2px solid #d3d3d3;">
         </div>
         <script type="text/javascript">
           function recon_start() {
@@ -78,40 +114,20 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://nips.cc/virtual/2023/poster/71865">
-			<span class="papertitle">Extracting Reward Functions from Diffusion Models</span>
+          <span class="papertitle">Extracting Reward Functions from Diffusion Models</span>
         </a>
         <br>
         <b>Felipe Nuti*</b>,
-		<a href="https://www.robots.ox.ac.uk/~frtim/">Tim Franzmeyer*</a>,
+        <a href="https://www.robots.ox.ac.uk/~frtim/">Tim Franzmeyer*</a>,
         <a href="https://www.robots.ox.ac.uk/~joao/">João Henriques</a>
         <br>
         <em>NeurIPS</em>, 2023
         <br>
         <a href="https://nips.cc/virtual/2023/poster/71865">conference page</a>
         /
-        <a href="https://www.robots.ox.ac.uk/~vgg/research/reward-diffusion/">project page</a>
-        /
         <a href="https://arxiv.org/abs/2306.01804">arXiv</a>
         <p></p>
         <p>
         A method for quantifying differences in preferences between any two diffusion models.
         </p>
-      </td>
-    </tr>
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Based on Jon Barron's website <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+      </t
